@@ -7,3 +7,23 @@
     font-family: 'Lexend', sans-serif;
   }
 }
+
+/* .animated-link {
+  position: relative;
+} */
+
+/* .animated-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Adjust thickness */
+  /* background-color: #4ade80; Tailwind color for green-400 */
+  /* transition: width 0.4s ease; */
+/* } */ 
+/* 
+.animated-link:hover::before { */
+  /* width: 100%; Expands the underline to full width */
+/* } */
+
