@@ -584,12 +584,12 @@ const technologies = [
   },
   {
     name: 'Microservice',
-    url: 'https://konghq.com/',
+    url: 'https://www.microservices.com/',
     img: './microservice.png',
   },
   {
     name: 'Kong',
-    url: 'https://www.microservices.com/',
+    url: 'https://konghq.com/',
     img: './kong.svg',
   },
   {
