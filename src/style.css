@@ -8,6 +8,24 @@
   }
 }
 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+#about,
+#project,
+#tech {
+  scroll-margin-top: 16vh;
+}
+
 /* .animated-link {
   position: relative;
 } */
@@ -19,11 +37,10 @@
   bottom: 0;
   width: 0;
   height: 2px; /* Adjust thickness */
-  /* background-color: #4ade80; Tailwind color for green-400 */
-  /* transition: width 0.4s ease; */
-/* } */ 
+/* background-color: #4ade80; Tailwind color for green-400 */
+/* transition: width 0.4s ease; */
+/* } */
 /* 
 .animated-link:hover::before { */
-  /* width: 100%; Expands the underline to full width */
+/* width: 100%; Expands the underline to full width */
 /* } */
-

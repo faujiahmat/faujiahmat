@@ -15,7 +15,7 @@
   <body>
     <div
       id="main"
-      class="bg-gradient-to-br from-slate-500 to-slate-700 bg-no-repeat h-screen bg-cover bg-fixed overflow-y-scroll relative pb-10 sm:pb-24 max-w-screen-2xl"
+      class="bg-gradient-to-br from-slate-500 to-slate-700 bg-no-repeat h-screen bg-cover bg-fixed overflow-y-scroll no-scrollbar relative pb-10 sm:pb-24 max-w-screen-2xl"
     >
       <header
         class="sm:h-[16vh] sm:bg-gradient-to-br from-slate-500 to-slate-700 bg-fixed sm:flex items-center justify-between sticky top-0 z-50 hidden"
@@ -89,7 +89,7 @@
       </header>
       <main class="sm:flex justify-between text-white-green z-10">
         <!-- left side -->
-        <div class="relative sm:pt-28 pt-20">
+        <div class="relative sm:pt-28 pt-20 sm:w-1/2">
           <div class="sm:pl-20 pl-8 font-light sm:sticky sm:top-64">
             <div class="sm:text-6xl text-3xl tracking-tighter">
               <span class="text text-smooth-green">Hi</span>, I<span
@@ -166,36 +166,36 @@
               </a>
             </nav>
 
-            <div class="pt-20 max-sm:hidden">
+            <div class="pt-20 max-sm:hidden flex flex-col">
               <a
                 href="#about"
                 id="about-link"
-                class="relative after:content-[''] after:absolute after:w-4 after:h-4 after:bg-no-repeat after:bg-contain after:bg-[url('/arrow-right-up-green.svg')] after:top-0.5 after:transition after:duration-300 hover:after:drop-shadow-[0px_0px_2px_rgba(0,253,93,1)]"
+                class="relative after:content-[''] after:absolute after:w-4 after:h-4 after:bg-no-repeat after:bg-contain after:bg-[url('/arrow-right-up-green.svg')] after:top-0.5 after:transition after:duration-300 hover:after:drop-shadow-[0px_0px_2px_rgba(0,253,93,1)] w-fit"
               >
                 About
               </a>
 
-              <a href="#project" id="project-link">
-                <div
-                  class="relative after:content-[''] after:absolute after:w-4 after:h-4 after:bg-no-repeat after:bg-contain after:bg-[url('/arrow-right-up-green.svg')] after:top-0.5 after:transition after:duration-300 hover:after:drop-shadow-[0px_0px_2px_rgba(0,253,93,1)]"
-                >
-                  Project
-                </div>
+              <a
+                href="#project"
+                id="project-link"
+                class="relative after:content-[''] after:absolute after:w-4 after:h-4 after:bg-no-repeat after:bg-contain after:bg-[url('/arrow-right-up-green.svg')] after:top-0.5 after:transition after:duration-300 hover:after:drop-shadow-[0px_0px_2px_rgba(0,253,93,1)] w-fit"
+              >
+                Project
               </a>
 
-              <a href="#tech" id="tech-link">
-                <div
-                  class="relative after:content-[''] after:absolute after:w-4 after:h-4 after:bg-no-repeat after:bg-contain after:bg-[url('/arrow-right-up-green.svg')] after:top-0.5 after:transition after:duration-300 hover:after:drop-shadow-[0px_0px_2px_rgba(0,253,93,1)]"
-                >
-                  Technologies
-                </div>
+              <a
+                href="#tech"
+                id="tech-link"
+                class="relative after:content-[''] after:absolute after:w-4 after:h-4 after:bg-no-repeat after:bg-contain after:bg-[url('/arrow-right-up-green.svg')] after:top-0.5 after:transition after:duration-300 hover:after:drop-shadow-[0px_0px_2px_rgba(0,253,93,1)] w-fit"
+              >
+                What I Use?
               </a>
             </div>
           </div>
         </div>
 
         <!-- right side -->
-        <div class="sm:pr-20 sm:pt-5 sm:w-5/12 px-8 pt-10">
+        <div class="sm:pr-20 sm:pt-5 sm:w-1/2 px-8 pt-10">
           <h6 class="sm:hidden">about</h6>
 
           <p
@@ -236,122 +236,11 @@
                 My Projects
               </h1>
               <h6 class="sm:hidden">my project</h6>
+              <!-- cards -->
               <div
+                id="projects-container"
                 class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 sm:gap-8 gap-3 pt-6 sm:pt-0"
-              >
-                <!-- Project Card 1 -->
-                <div
-                  class="bg-white sm:rounded-lg rounded-md sm:shadow-lg shadow-md overflow-hidden hover:scale-105 transform transition"
-                >
-                  <a
-                    href="https://github.com/faujiahmat/Back-end-Task-Management-App"
-                    target="_blank"
-                  >
-                    <img
-                      src="./Sandy_Bus-37_Single-08.webp"
-                      alt="Project 1 Image"
-                      class="w-full h-24 object-cover"
-                    />
-                    <div class="p-2">
-                      <h3
-                        class="sm:text-xl text-sm font-semibold text-gray-800"
-                      >
-                        Back-end Task Management App
-                      </h3>
-                    </div>
-                  </a>
-                </div>
-                <!-- Project Card 2 -->
-                <div
-                  class="bg-white sm:rounded-lg rounded-md sm:shadow-lg shadow-md overflow-hidden hover:scale-105 transform transition"
-                >
-                  <a
-                    href="https://github.com/faujiahmat/project-harisenin-fullstack-kel7"
-                    target="_blank"
-                  >
-                    <img
-                      src="./beranda-seven-store.webp"
-                      alt="Project 2 Image"
-                      class="w-full h-24 object-cover"
-                    />
-                    <div class="p-2">
-                      <h3
-                        class="sm:text-xl text-sm font-semibold text-gray-800 text-center"
-                      >
-                        Seven Store Fullstack App
-                      </h3>
-                    </div>
-                  </a>
-                </div>
-
-                <div
-                  class="bg-white sm:rounded-lg rounded-md sm:shadow-lg shadow-md overflow-hidden hover:scale-105 transform transition"
-                >
-                  <a
-                    href="https://github.com/faujiahmat/TUGAS-JAVASCRIPT"
-                    target="_blank"
-                  >
-                    <img
-                      src="./todolistimg.webp"
-                      alt="Todolist"
-                      class="w-full h-24 object-cover"
-                    />
-                    <div class="p-2">
-                      <h3
-                        class="sm:text-xl text-sm font-semibold text-gray-800"
-                      >
-                        Todolist
-                      </h3>
-                    </div>
-                  </a>
-                </div>
-
-                <div
-                  class="bg-white sm:rounded-lg rounded-md sm:shadow-lg shadow-md overflow-hidden hover:scale-105 transform transition"
-                >
-                  <a
-                    href="https://github.com/faujiahmat/implementasi-redis"
-                    target="_blank"
-                  >
-                    <img
-                      src="./redisimg.webp"
-                      alt="redis"
-                      class="w-full h-24 object-cover"
-                    />
-                    <div class="p-2">
-                      <h3
-                        class="sm:text-xl text-sm font-semibold text-gray-800"
-                      >
-                        Implementasi Redis
-                      </h3>
-                    </div>
-                  </a>
-                </div>
-
-                <!-- <div
-                  class="bg-white sm:rounded-lg rounded-md sm:shadow-lg shadow-md overflow-hidden hover:scale-105 transform transition"
-                >
-                  <a
-                    href="https://github.com/username/project2"
-                    target="_blank"
-                  >
-                    <img
-                      src="project2-image.png"
-                      alt="Project 2 Image"
-                      class="w-full h-24 object-cover"
-                    />
-                    <div class="p-2">
-                      <h3
-                        class="sm:text-xl text-sm font-semibold text-gray-800"
-                      >
-                        Project 2
-                      </h3>
-                    </div>
-                  </a>
-                </div> -->
-
-                <!-- Add more project cards here -->
-              </div>
+              ></div>
             </div>
           </div>
 
@@ -359,96 +248,63 @@
           <div id="tech" class="pt-20">
             <div class="container mx-auto">
               <h1 class="text-3xl font-semibold text-center mb-8 max-sm:hidden">
-                Technologies
+                What I Use?
               </h1>
 
-              <h6 class="sm:hidden">technologies</h6>
+              <h6 class="sm:hidden">What I Use?</h6>
               <div
+                id="techGrid"
                 class="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 sm:gap-6 gap-4 sm:justify-items-center justify-items-stretch pt-6 sm:pt-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          id="project-modal"
+          class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50 hidden"
+        >
+          <div
+            class="bg-gradient-to-br from-slate-500 to-slate-700 bg-no-repeatbg-cover bg-fixed rounded-lg shadow-xl max-w-3xl w-full h-5/6 p-4 relative overflow-y-scroll no-scrollbar scroll-smooth"
+          >
+            <h2
+              id="modal-title"
+              class="text-2xl font-bold text-slate-200 mb-2"
+            ></h2>
+            <img
+              id="modal-image"
+              src=""
+              alt=""
+              class="w-full h-40 object-cover rounded mb-4"
+            />
+            <p id="modal-description" class="text-slate200 text-sm mb-4"></p>
+
+            <!-- Tempat untuk Tab Buttons -->
+            <div id="modal-tab-buttons" class="flex flex-wrap gap-3 mb-2"></div>
+
+            <!-- Tempat untuk Tab Contents -->
+            <div id="modal-tab-contents" class="space-y-1"></div>
+
+            <div class="flex justify-end mt-6">
+              <a
+                id="modal-link"
+                href="#"
+                target="_blank"
+                class="absolute top-2 right-4 flex justify-center items-center bg-cyan-700 text-white px-2 py-2 rounded-s-full hover:bg-cyan-800 transition shadow-xl"
               >
-                <!-- JavaScript -->
-                <a
-                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  class="w-5 h-5 mr-1"
                 >
-                  <img
-                    src="./javascript.svg"
-                    alt="JavaScript"
-                    class="sm:w-20 sm:h-20 w-10 h-10 sm:rounded-lg rounded-md"
+                  <path
+                    d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.415-4.033-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.729.082-.729 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.807 1.305 3.492.997.108-.776.418-1.305.76-1.605-2.665-.3-5.467-1.332-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 0 1 3-.404 11.52 11.52 0 0 1 3 .404c2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.221 0 4.61-2.807 5.628-5.48 5.921.43.37.814 1.096.814 2.21v3.281c0 .32.218.694.825.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12Z"
                   />
-                </a>
-                <!-- TypeScript -->
-                <a href="https://www.typescriptlang.org/">
-                  <img
-                    src="./typescript.svg"
-                    alt="TypeScript"
-                    class="sm:w-20 sm:h-20 w-10 h-10 sm:rounded-lg rounded-md"
-                  />
-                </a>
-                <!-- Node.js -->
-                <a href="https://nodejs.org/en">
-                  <img
-                    src="./node.svg"
-                    alt="Node.js"
-                    class="sm:w-20 sm:h-20 w-10 h-10 sm:rounded-lg rounded-md"
-                  />
-                </a>
-                <!-- Express -->
-                <a href="https://expressjs.com/">
-                  <img
-                    src="./express.svg"
-                    alt="Express"
-                    class="sm:w-20 sm:h-20 w-10 h-10 sm:rounded-lg rounded-md"
-                  />
-                </a>
-                <!-- HTML -->
-                <a href="https://www.w3schools.com/html/">
-                  <img
-                    src="./html.svg"
-                    alt="HTML"
-                    class="sm:w-20 sm:h-20 w-10 h-10 sm:rounded-lg rounded-md"
-                  />
-                </a>
-                <!-- CSS -->
-                <a href="https://www.w3schools.com/css/">
-                  <img
-                    src="./css.svg"
-                    alt="CSS"
-                    class="sm:w-20 sm:h-20 w-10 h-10 sm:rounded-lg rounded-md"
-                  />
-                </a>
-                <!-- tailwind -->
-                <a href="https://tailwindcss.com/">
-                  <img
-                    src="./tailwind.svg"
-                    alt="CSS"
-                    class="sm:w-20 sm:h-20 w-10 h-10 sm:rounded-lg rounded-md"
-                  />
-                </a>
-                <!-- MySQL -->
-                <a href="https://www.mysql.com/">
-                  <img
-                    src="mysql.png"
-                    alt="MySQL"
-                    class="sm:w-20 sm:h-20 w-10 h-10 sm:rounded-lg rounded-md"
-                  />
-                </a>
-                <!-- PostgreSQL -->
-                <a href="https://www.postgresql.org/">
-                  <img
-                    src="./postgresql.svg"
-                    alt="PostgreSQL"
-                    class="sm:w-20 sm:h-20 w-10 h-10 sm:rounded-lg rounded-md"
-                  />
-                </a>
-                <!-- MongoDB -->
-                <a href="https://www.mongodb.com/">
-                  <img
-                    src="./mongodb.png"
-                    alt="MongoDB"
-                    class="sm:w-20 sm:h-20 w-10 h-10 sm:rounded-lg rounded-md"
-                  />
-                </a>
-              </div>
+                </svg>
+                <span>GitHub</span>
+              </a>
             </div>
           </div>
         </div>
